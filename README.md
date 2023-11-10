@@ -2,7 +2,7 @@
 This project is automating the tests of creating gmail account on Google Chrome Web Browser.
 
 ## Test Objectives
-To verify sign up component enable creating new accout flawlessly
+To verify sign up component enable creating new accout flawlessly.
 
 ## Test Scope
 Constraints: _Cover `personal use` account only_ & _Test until `phone verification`_
@@ -29,7 +29,9 @@ npx cypress run --headless --spec cypress/e2e/positive-test.cy.js
 ```
 
 ## Test Limitations
-Using automation `Sign in` page and all the succeeding pages are not allowed to access, 403 Forbidden Error
+Using automation, `Sign in` page and all the succeeding pages are not allowed to access, 403 Forbidden Error
+
+Unable to obtain the actual results for test cases.
 
 ## Test Cases
 Prerequisite: _`Sign out` your accout from Google Chrome_
@@ -87,18 +89,18 @@ Test cases for Basic information page
 Test cases for How you’ll sign in page
 
   Positive Test Cases
-  | Test ID | Username   | Existing Email Address | Expected Result         | Actual Result |
-  | --------| -----------| -----------------------| ------------------------|---------------|
-  | 1       | chrkiss777 |                        | Pass                    |               |
-  | 2       |            | chrkiss777@naver.com   | Enter verification Code |               |
-  | 3       |            | chrkiss777@gmail.com   | Enter verification Code |               |
+  | Test ID | Create a Gmail Address | Existing Email Address | Expected Result         | Actual Result |
+  | --------| -----------------------| -----------------------| ------------------------|---------------|
+  | 1       | chrkiss777             |                        | Pass                    |               |
+  | 2       |                        | chrkiss777@naver.com   | Enter verification Code |               |
+  | 3       |                        | chrkiss777@gmail.com   | Enter verification Code |               |
 
   Negative Test Cases
-  | Test ID | Username             | Existing Email Address | Expected Result | Actual Result |
-  | --------| ---------------------| -----------------------| ----------------| --------------|
-  | 1       | chrkiss777@gmail.com |                        | Fail            |               |
-  | 2       | centered             |                        | Fail            |               |
-  | 3       |                      | chrkiss777@gmail.com   | Fail            |               |
+  | Test ID | Create a Gmail Address | Existing Email Address | Expected Result         | Actual Result |
+  | --------| -----------------------| -----------------------| ------------------------|---------------|
+  | 1       | chrkiss777@gmail.com   |                        | Fail                    |               |
+  | 2       | chrkiss-777@gmail.com  |                        | Fail                    |               |
+  | 3       |                        | chrkiss-777@gmail.com  | Fail                    |               |
 
 * Click `Next` button.
 * Check if the new page has `Create a strong password` as content of \<span\> under \<h1\>  
@@ -106,18 +108,18 @@ Test cases for How you’ll sign in page
 Test cases for Create a strong password page
 
   Positive Test Cases
-  | Test ID | Description           | Password | Confirm PW | Show PW |
-  | --------| ----------------------| ---------| -----------| --------|
-  | 1       | right-aligned         | $1600    |            |         |
-  | 2       | centered              |   $12    |            |         |
-  | 3       | are neat              |    $1    |            |         |
+  | Test ID | Password | Confirm PW | Show PW | Expected Result | Actual Result |
+  | --------| ---------| -----------| --------| ----------------| --------------|
+  | 1       | L0v32t3st| L0v32t3st  |         | Pass            |               |
+  | 2       | L0v32t3s!| L0v32t3s!  |         | Pass            |               |
+  | 3       | L0v32t3s!| L0v32t3s!  | ✅      | Pass            |               |
 
   Negative Test Cases
-  | Test ID | Description           | Password | Confirm PW | Show PW |
-  | --------| ----------------------| ---------| -----------| --------|
-  | 1       | right-aligned         | $1600    |            |         |
-  | 2       | centered              |   $12    |            |         |
-  | 3       | are neat              |    $1    |            |         |
+  | Test ID | Password | Confirm PW | Show PW | Expected Result | Actual Result |
+  | --------| ---------| -----------| --------| ----------------| --------------|
+  | 1       |          |            |         | Fail            |               |
+  | 2       | L0v32t3s!|            |         | Fail            |               |
+  | 3       | L0v32t3  | L0v32t3    | ✅      | Fail            |               |
 
 * Click `Next` button.
 * Check if the new page has `Confirm you’re not a robot` as content of \<span\> under \<h1\>  
