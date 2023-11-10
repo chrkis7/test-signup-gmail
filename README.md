@@ -46,16 +46,16 @@ Test cases for Create a Google Account page
   Positive Test Cases
   | Test ID | First Name | Last Name (Optional) | Expected Result | Actual Result |
   | --------| -----------| ---------------------| ----------------| --------------|
-  | 1       | Jane       |                      | Pass            | Pass          |
-  | 2       | Jane       | Doe                  | Pass            | Pass          |
-  | 3       | jane       | Doe                  | Pass            | Pass          |
+  | 1       | Jane       |                      | Pass            |               |
+  | 2       | Jane       | Doe                  | Pass            |               |
+  | 3       | jane       | Doe                  | Pass            |               |
 
   Negative Test Cases
   | Test ID | First Name | Last Name (Optional) | Expected Result | Actual Result |
   | --------| -----------| ---------------------| ----------------| --------------|
-  | 1       |            |                      | Fail            | Fail          |
-  | 2       |            | Doe                  | Fail            | Fail          |
-  | 3       | a          |                      | Fail            | Fail          |
+  | 1       |            |                      | Fail            |               |
+  | 2       |            | Doe                  | Fail            |               |
+  | 3       | a          |                      | Fail            |               |
 
 * Click `Next` button.
 * Check if the new page has `Basic information` as content of \<span\> under \<h1\>
@@ -65,21 +65,21 @@ Test cases for Basic information page
   Positive Test Cases
   | Test ID | Month | Day | Year | Gender        | What's your gender? | Please refer to me as | Expected Result | Actual Result |
   | --------| ------| ----| -----| --------------| --------------------| --------------------- | ----------------| --------------|
-  | 1       | May   | 5   | 1894 | Male          |                     |                       | Pass            | Pass          |
-  | 2       | May   | 5   | 2023 | Female        |                     |                       | Pass            | Pass          |
-  | 3       | May   | 5   | 2000 | Rater not say |                     |                       | Pass            | Pass          |
-  | 4       | May   | 5   | 1990 | Custom        | Non-binary          | Other                 | Pass            | Pass          |
+  | 1       | May   | 5   | 1894 | Male          |                     |                       | Pass            |               |
+  | 2       | May   | 5   | 2023 | Female        |                     |                       | Pass            |               |
+  | 3       | May   | 5   | 2000 | Rater not say |                     |                       | Pass            |               |
+  | 4       | May   | 5   | 1990 | Custom        | Non-binary          | Other                 | Pass            |               |
 
   Negative Test Cases
   | Test ID | Month | Day | Year | Gender        | What's your gender? | Please refer to me as | Expected Result | Actual Result |
-  | --------| ------| ----| -----| --------------| --------------------| --------------------- | ----------------| --------------|
-  | 1       | May   | 5   | 1893 | Male          |                     |                       | Fail            | Fail          |
-  | 2       | May   | 5   | 2024 | Male          |                     |                       | Fail            | Fail          |
-  | 3       | May   | 0   | 2023 | Female        |                     |                       | Fail            | Fail          |
-  | 4       | May   | 33  | 2000 | Rater not say |                     |                       | Fail            | Fail          |
-  | 5       | May   | fi  | 1990 | Custom        | Non-binary          | Other                 | Fail            | Fail          |
-  | 6       | May   | 5   | 1980 | Custom        |                     |                       | Fail            | Fail          |
-  | 7       | May   | 5   | 1970 | Custom        | 3                   | Other                 | Fail            | Fail          |
+  | --------| ------| ----| -----| --------------| --------------------| --------------------- | ----------------|---------------|
+  | 1       | May   | 5   | 1893 | Male          |                     |                       | Fail            |               |
+  | 2       | May   | 5   | 2024 | Male          |                     |                       | Fail            |               |
+  | 3       | May   | 0   | 2023 | Female        |                     |                       | Fail            |               |
+  | 4       | May   | 33  | 2000 | Rater not say |                     |                       | Fail            |               |
+  | 5       | May   | fi  | 1990 | Custom        | Non-binary          | Other                 | Fail            |               |
+  | 6       | May   | 5   | 1980 | Custom        |                     |                       | Fail            |               |
+  | 7       | May   | 5   | 1970 | Custom        | 3                   | Other                 | Fail            |               |
 
 * Click `Next` button.
 * Check if the new page has `How you’ll sign in` as content of \<span\> under \<h1\>
@@ -87,18 +87,18 @@ Test cases for Basic information page
 Test cases for How you’ll sign in page
 
   Positive Test Cases
-  | Test ID | Username   | Existing Email Address | Expected Result         | Actual Result           |
-  | --------| -----------| -----------------------| ------------------------| ------------------------|
-  | 1       | chrkiss777 |                        | Pass                    | Pass                    |
-  | 2       |            | chrkiss777@naver.com   | Enter verification Code | Enter verification Code |
-  | 3       |            | chrkiss777@gmail.com   | Enter verification Code | Enter verification Code |
+  | Test ID | Username   | Existing Email Address | Expected Result         | Actual Result |
+  | --------| -----------| -----------------------| ------------------------|---------------|
+  | 1       | chrkiss777 |                        | Pass                    |               |
+  | 2       |            | chrkiss777@naver.com   | Enter verification Code |               |
+  | 3       |            | chrkiss777@gmail.com   | Enter verification Code |               |
 
   Negative Test Cases
   | Test ID | Username             | Existing Email Address | Expected Result | Actual Result |
   | --------| ---------------------| -----------------------| ----------------| --------------|
-  | 1       | chrkiss777@gmail.com |                        | Fail            | Fail          |
-  | 2       | centered             |                        | Fail            | Fail          |
-  | 3       |                      | chrkiss777@gmail.com   | Fail            | Fail          |
+  | 1       | chrkiss777@gmail.com |                        | Fail            |               |
+  | 2       | centered             |                        | Fail            |               |
+  | 3       |                      | chrkiss777@gmail.com   | Fail            |               |
 
 * Click `Next` button.
 * Check if the new page has `Create a strong password` as content of \<span\> under \<h1\>  
