@@ -19,7 +19,7 @@ Requirements
 In order to get the code and install dependencies
 ```
 git clone git@github.com:chrkis7/test-signup-gmail.git
-cd testing-workshop-cypress
+cd test-signup-gmail
 npm install
 ```
 
