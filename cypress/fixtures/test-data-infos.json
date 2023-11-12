@@ -1,0 +1,37 @@
+[
+  {
+    "month": "May",
+    "day": 5,
+    "year": 1984,
+    "gender": "Male",
+    "newGender": "",
+    "personalPronoun": ""
+  },
+
+  {
+    "month": "May",
+    "day": 5,
+    "year": 2023,
+    "gender": "Female",
+    "newGender": "",
+    "personalPronoun": ""
+  },
+
+  {
+    "month": "May",
+    "day": 5,
+    "year": 2000,
+    "gender": "Rather not say",
+    "newGender": "",
+    "personalPronoun": ""
+  },
+
+  {
+    "month": "May",
+    "day": 5,
+    "year": 1990,
+    "gender": "Custom",
+    "newGender": "Non-binary",
+    "personalPronoun": "Other"
+  }
+]
