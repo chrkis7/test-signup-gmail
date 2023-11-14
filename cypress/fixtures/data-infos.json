@@ -4,7 +4,7 @@
     "day": 5,
     "year": 1984,
     "gender": "Male",
-    "newGender": "",
+    "customGender": "",
     "personalPronoun": ""
   },
 
@@ -13,7 +13,7 @@
     "day": 5,
     "year": 2023,
     "gender": "Female",
-    "newGender": "",
+    "customGender": "",
     "personalPronoun": ""
   },
 
@@ -22,7 +22,7 @@
     "day": 5,
     "year": 2000,
     "gender": "Rather not say",
-    "newGender": "",
+    "customGender": "",
     "personalPronoun": ""
   },
 
@@ -31,7 +31,7 @@
     "day": 5,
     "year": 1990,
     "gender": "Custom",
-    "newGender": "Non-binary",
+    "customGender": "Non-binary",
     "personalPronoun": "Other"
   }
 ]

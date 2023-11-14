@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "npx cypress run --headless --spec cypress/e2e/positive-test/test-name-page.cy.js && npx cypress run --headless --spec cypress/e2e/positive-test/test-info-page.cy.js && npx cypress run --headless --spec cypress/e2e/positive-test/test-email-page.cy.js && npx cypress run --headless --spec cypress/e2e/positive-test/test-password-page.cy.js"
+  },
+
   "devDependencies": {
     "cypress": "^13.5.0"
   }

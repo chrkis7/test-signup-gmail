@@ -25,7 +25,7 @@ npm install
 
 In order to run the test headless mode
 ```
-npx cypress run --headless --spec cypress/e2e/positive-test.cy.js
+npm start
 ```
 
 ## Test Limitations
@@ -69,7 +69,7 @@ Test cases for Basic information page
   | --------| ------| ----| -----| --------------| --------------------| --------------------- | ----------------| --------------|
   | 1       | May   | 5   | 1894 | Male          |                     |                       | Pass            |               |
   | 2       | May   | 5   | 2023 | Female        |                     |                       | Pass            |               |
-  | 3       | May   | 5   | 2000 | Rater not say |                     |                       | Pass            |               |
+  | 3       | May   | 5   | 2000 | Rather not say |                     |                       | Pass            |               |
   | 4       | May   | 5   | 1990 | Custom        | Non-binary          | Other                 | Pass            |               |
 
   Negative Test Cases
