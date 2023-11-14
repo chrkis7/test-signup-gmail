@@ -33,6 +33,12 @@ Using automation, `Sign in` page and all the succeeding pages are not allowed to
 
 Unable to obtain the actual results for test cases.
 
+Chose Cypress for this project due to easy installation and run for uers and to prove the ability pick up new frameworks.
+
+But due to lack of experties in Cypress, coudln't fix some errors.
+
+But the project structured well and followed page object model.
+
 ## Test Cases
 Prerequisite: _`Sign out` your accout from Google Chrome_
 
