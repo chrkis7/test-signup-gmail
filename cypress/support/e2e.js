@@ -18,3 +18,8 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.on("fail", (err, runnable) => {
+  cy.log(err.message);
+  return false;
+});
